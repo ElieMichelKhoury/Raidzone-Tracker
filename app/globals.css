@@ -144,3 +144,83 @@ tr:hover td { background: rgba(255,255,255,.02); }
 .divider { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
 .text-sm { font-size: 12px; }
 .wrap { flex-wrap: wrap; }
+/* ── MOBILE RESPONSIVE ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .app { flex-direction: column; height: auto; min-height: 100vh; }
+
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo { padding: 10px 14px; border-bottom: none; border-right: 1px solid var(--border); }
+  .logo-t { font-size: 11px; }
+  .logo-s { display: none; }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0;
+    flex: 1;
+  }
+
+  .nav-sec { display: none; }
+
+  .nav-item {
+    padding: 10px 12px;
+    font-size: 12px;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active {
+    border-left: none;
+    border-bottom-color: var(--accent);
+  }
+
+  .sidebar-foot { display: none; }
+
+  .main { overflow-y: auto; }
+
+  .topbar { padding: 10px 14px; }
+  .topbar-t { font-size: 13px; }
+
+  .content { padding: 14px; }
+
+  .g2 { grid-template-columns: 1fr; }
+  .g3 { grid-template-columns: 1fr; }
+  .g4 { grid-template-columns: 1fr 1fr; }
+
+  .modal { width: 95vw; }
+
+  table { font-size: 12px; }
+  th { padding: 6px 8px; font-size: 9px; }
+  td { padding: 6px 8px; }
+
+  .btn { padding: 6px 10px; font-size: 12px; }
+  .btn-xs { padding: 2px 5px; font-size: 10px; }
+
+  .raw-item { flex-direction: column; align-items: flex-start; gap: 6px; }
+
+  .stat-v { font-size: 20px; }
+  .stat-l { font-size: 9px; }
+
+  .ing { flex-wrap: wrap; }
+
+  .login-box { width: 95vw; }
+  .login-body { padding: 20px; }
+}
+
+@media (max-width: 480px) {
+  .g4 { grid-template-columns: 1fr 1fr; }
+  .topbar .row { gap: 6px; }
+  .topbar .mono { display: none; }
+}
