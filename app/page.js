@@ -16,7 +16,7 @@ export default async function HomePage({ searchParams }) {
       <div className="login-bg" />
       <div className="login-box">
         <div className="login-top">
-          <img src="https://play-lh.googleusercontent.com/MFSbgPkTDJFzHDejLAXCQbTOM-RCjLmqCJqBNVFm7giXhGADPeDxcZVKnHF8sTQKVA" alt="RaidZone" style={{ width: 80, height: 80, borderRadius: 16, marginBottom: 12 }} />
+          <img src="https://www.oncehuman.game/pc/gw/20240706212700/data/share4.jpg" alt="RaidZone" style={{ width: 80, height: 80, borderRadius: 16, marginBottom: 12 }} />
           <div className="login-title">RAIDZONE</div>
           <div className="login-sub">ONCE HUMAN — CRAFTING TRACKER</div>
         </div>
