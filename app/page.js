@@ -7,10 +7,10 @@ export default async function HomePage({ searchParams }) {
 
   const error = searchParams?.error;
   const errorMessages = {
-    steam_invalid:  'Steam verification failed. Please try again.',
+    steam_invalid: 'Steam verification failed. Please try again.',
     steam_id_parse: 'Could not read Steam ID. Please try again.',
-    steam_profile:  'Could not fetch your Steam profile.',
-    user_create:    'Account creation failed. Please try again.',
+    steam_profile: 'Could not fetch your Steam profile.',
+    user_create: 'Account creation failed. Please try again.',
   };
 
   return (
@@ -32,27 +32,18 @@ export default async function HomePage({ searchParams }) {
               {errorMessages[error] || 'An error occurred. Please try again.'}
             </div>
           )}
-
           <div className="alert alert-info" style={{ fontSize: 12, lineHeight: 1.5 }}>
             Log in with your Steam account to track your personal inventory and join a clan.
-            All crafting recipes and material data are shared globally.
           </div>
-
           
             href="/api/auth/steam"
-            className="btn-steam"
-            style={{ justifyContent: 'center', borderRadius: 4, textDecoration: 'none', display: 'flex' }}
+            style={{ justifyContent: 'center', borderRadius: 4, textDecoration: 'none', display: 'flex', background: '#1b2838', padding: '12px 20px', border: '1px solid #4c6b8a', color: '#c6d4df', fontWeight: 700, fontSize: 15, gap: 10, alignItems: 'center' }}
           >
-            <img
-              src="https://community.fastly.steamstatic.com/public/shared/images/signin/sits_small.png"
-              alt="Sign in through Steam"
-              style={{ height: 40 }}
-            />
+            🎮 Sign in through Steam
           </a>
-
           <div className="muted" style={{ textAlign: 'center', fontSize: 11, lineHeight: 1.6 }}>
             Your Steam profile name and avatar will be used.
-            No password required — Steam handles authentication.
+            No password required.
           </div>
         </div>
       </div>
