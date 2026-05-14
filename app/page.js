@@ -19,7 +19,11 @@ export default async function HomePage({ searchParams }) {
       <div className="login-bg" />
       <div className="login-box">
         <div className="login-top">
-          <div style={{ fontSize: 40, marginBottom: 10 }}>☢️</div>
+          <img
+            src="https://play-lh.googleusercontent.com/MFSbgPkTDJFzHDejLAXCQbTOM-RCjLmqCJqBNVFm7giXhGADPeDxcZVKnHF8sTQKVA"
+            alt="RaidZone"
+            style={{ width: 80, height: 80, borderRadius: 16, marginBottom: 12 }}
+          />
           <div className="login-title">RAIDZONE</div>
           <div className="login-sub">ONCE HUMAN — CRAFTING TRACKER</div>
         </div>
@@ -35,12 +39,11 @@ export default async function HomePage({ searchParams }) {
             All crafting recipes and material data are shared globally.
           </div>
 
-          <a
+          
             href="/api/auth/steam"
             className="btn-steam"
             style={{ justifyContent: 'center', borderRadius: 4, textDecoration: 'none', display: 'flex' }}
           >
-            {/* Steam logo SVG */}
             <svg width="24" height="24" viewBox="0 0 233 233" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M116.5 0C52.1 0 0 52.1 0 116.5c0 55.5 38.8 101.9 90.8 113.5l34.6-85.5c-2.9-1.2-5.6-2.9-7.9-5.1-9.4-9.4-9.4-24.6 0-33.9 9.4-9.4 24.6-9.4 33.9 0 9.4 9.4 9.4 24.6 0 33.9-1.2 1.2-2.5 2.2-3.9 3.1l-83.9 34.1C74.8 188.2 94.4 197 116.5 197 180.9 197 233 144.9 233 80.5S180.9 0 116.5 0z" fill="#66c0f4"/>
             </svg>
